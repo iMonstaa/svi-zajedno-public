@@ -1,0 +1,58 @@
+.container {
+  width: clamp(0px, 100%, 1230px);
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.invert {
+  transition: 1s all var(--bezier);
+  filter: invert(1);
+}
+
+.sofia {
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+.🌈 {
+  animation: colorRotate 0.5s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+.hoverspread {
+  text-align: center;
+  font-size: 19px;
+  color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s var(--bezier);
+  text-decoration: underline;
+  &:hover {
+    letter-spacing: 2px;
+  }
+}

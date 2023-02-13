@@ -1,0 +1,34 @@
+.feed {
+  display: grid;
+  grid-template-columns: repeat(3, 365px);
+  justify-content: center;
+  margin: 0 auto;
+  padding: 110px 17px;
+  justify-items: center;
+
+  @media only screen and (max-width: 1114px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.create {
+  position: fixed;
+  bottom: 110px;
+  filter: var(--dropshadow);
+  margin: 0 auto;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s var(--bezier);
+  &:hover {
+    transform: translateY(-5px);
+  }
+  @media only screen and (max-width: 768px) {
+    right: 20px;
+  }
+}

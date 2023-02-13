@@ -1,0 +1,16 @@
+.app__footer {
+  width: 100%;
+  position: fixed;
+  bottom: -10px;
+  overflow: hidden;
+
+  height: 20vh;
+  background-image: url("../assets/images/longwave.svg");
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: -1;
+
+  @media only screen and (min-height: 750px) {
+    height: 30vh;
+  }
+}

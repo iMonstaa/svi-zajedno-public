@@ -1,0 +1,119 @@
+.widget {
+  width: 300px;
+  height: 193px;
+  background: linear-gradient(180deg, #000000 0%, #00760c 100%);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  position: relative;
+
+  &[data-aqi="1"] {
+    background: linear-gradient(180deg, #000000 0%, #00760c 100%);
+  }
+  &[data-aqi="2"] {
+    background: linear-gradient(180deg, #000000 0%, #657600 100%);
+  }
+  &[data-aqi="3"] {
+    background: linear-gradient(180deg, #000000 0%, #766a00 100%);
+  }
+  &[data-aqi="4"] {
+    background: linear-gradient(180deg, #000000 0%, #764700 100%);
+  }
+  &[data-aqi="5"] {
+    background: linear-gradient(180deg, #000000 0%, #760000 100%);
+  }
+
+  &__wrapper {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  &__subtext {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    text-align: center;
+    & a {
+      color: inherit;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    left: 22px;
+    top: 16px;
+
+    font-weight: 700;
+    font-size: 24px;
+  }
+  &__refresh {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    &:hover {
+      rotate: 360deg;
+      transition: all 0.3s ease-out;
+    }
+  }
+  &__aqi {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+    bottom: 20px;
+    &__number {
+      font-size: 106px;
+      line-height: 100%;
+    }
+    &__text {
+      margin-bottom: 10px;
+      writing-mode: tb-rl;
+      rotate: 180deg;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      &[data-aqi="1"] {
+        color: #00ff19;
+      }
+      &[data-aqi="2"] {
+        color: #bdff00;
+      }
+      &[data-aqi="3"] {
+        color: #ffe600;
+      }
+      &[data-aqi="4"] {
+        color: #ff6b00;
+      }
+      &[data-aqi="5"] {
+        color: #ff0000;
+      }
+    }
+    &__values {
+      position: absolute;
+      font-size: 24px;
+      left: 23px;
+      bottom: 14px;
+      line-height: 22px;
+      border-spacing: 0;
+      border-collapse: collapse;
+      &__column {
+        &:nth-of-type(2) {
+          color: rgba(255, 255, 255, 0.5);
+          border-left: rgba(255, 255, 255, 0.5) 1px solid;
+          padding: 0 0 0 5px;
+        }
+        &:nth-of-type(1) {
+          display: flex;
+          justify-content: end;
+          padding: 0 5px 0 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.profile {
+  padding: 110px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__info {
+    display: flex;
+    width: 300px;
+    gap: 20px;
+    & > img {
+      border: 1px solid #000;
+      border-radius: 50%;
+    }
+    &__panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+}
+
+.logout {
+  border-radius: 25px;
+  background-color: #000;
+  color: #fff;
+  font-size: 22px;
+  min-height: 50px;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: 0.35s all ease-in-out;
+
+  filter: drop-shadow(0px 4px 5px #00000030);
+  &:hover {
+    filter: drop-shadow(0px 4px 5px #00000080);
+    transition: 0.35s all ease-in-out;
+  }
+}

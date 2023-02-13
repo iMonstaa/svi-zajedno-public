@@ -1,0 +1,217 @@
+.modal {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 110px 10px;
+  transition: all 0.3s var(--bezier);
+
+  &__wrapper {
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    pointer-events: all;
+    &--disabled {
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    &:hover {
+      rotate: (180deg);
+      transition: all 0.2s ease-out;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 40px;
+    & button {
+      border-radius: 25px;
+      background-color: #000;
+      color: #fff;
+      font-size: 22px;
+      min-height: 50px;
+      font-family: "Sofia Sans Condensed", sans-serif;
+      padding: 0 30px;
+      cursor: pointer;
+      border: 1px solid #000;
+      transition: 0.35s all ease-in-out;
+
+      filter: drop-shadow(0px 4px 5px #00000030);
+      &:hover {
+        filter: drop-shadow(0px 4px 5px #00000080);
+        transition: 0.35s all ease-in-out;
+      }
+    }
+    & h1 {
+      font-size: 54px;
+      font-weight: 700;
+      color: #000;
+    }
+    & h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #1c1c1c;
+    }
+    & h3 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #3c3c3c;
+    }
+    & p,
+    ul {
+      font-size: 24px;
+      font-weight: 400;
+      color: #000;
+      & a {
+        color: #000;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    & a {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    & button {
+      margin: 5px 15px 5px 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 80%;
+    width: clamp(0px, 80%, 820px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 10px 10px;
+    filter: var(--dropshadow);
+
+    &__wrapper {
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s var(--bezier);
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    &__close {
+      right: 20px;
+      top: 130px;
+    }
+  }
+}
+
+.searchmodal {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 110px 30px;
+  transition: all 0.3s var(--bezier);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    width: 100%;
+    border-radius: 25px;
+    font-size: 22px;
+    padding: 10px;
+    font-family: "Sofia Sans Condensed", sans-serif;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    filter: drop-shadow(0px 4px 5px #00000030);
+    margin: 10px 0;
+    display: block;
+  }
+
+  &__button {
+    margin: 0 0 10px 0;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #000;
+    font-size: 22px;
+    border: 1px solid #000;
+    filter: drop-shadow(0px 4px 5px #00000030);
+    transition: 0.3s all ease-out;
+    &:hover {
+      filter: drop-shadow(0px 4px 5px #00000080);
+    }
+  }
+
+  &__wrapper {
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    pointer-events: all;
+    &--disabled {
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    &:hover {
+      rotate: (180deg);
+      transition: all 0.2s ease-out;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 45%;
+    width: clamp(0px, 80%, 320px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 30px;
+    filter: var(--dropshadow);
+
+    &__wrapper {
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s var(--bezier);
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    &__close {
+      right: 20px;
+      top: 130px;
+    }
+  }
+}

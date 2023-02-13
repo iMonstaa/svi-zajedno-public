@@ -1,0 +1,406 @@
+.main {
+  &__article {
+    min-height: 100vh;
+    padding: 5% 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--wrapper {
+      position: absolute;
+      left: 15%;
+      display: flex;
+    }
+    &__question {
+      position: absolute;
+      left: 15%;
+      width: 676px;
+      transition: 1s all var(--bezier);
+      &--off {
+        transition: 1s all var(--bezier);
+        opacity: 0;
+      }
+    }
+    &__answer {
+      position: absolute;
+      left: 15%;
+      width: 578px;
+      transform: translateY(-13px);
+      transition: 1s all var(--bezier);
+      &--off {
+        transition: 1s all var(--bezier);
+        opacity: 0;
+      }
+    }
+
+    &__container {
+      width: clamp(0px, 90%, 1650px);
+      padding: 5% 0; //173px
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      &--first {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        @media only screen and (max-width: 425px) {
+          gap: 30px;
+        }
+        @media only screen and (max-width: 375px) {
+          gap: 0px;
+        }
+      }
+      @media only screen and (max-width: 824px) {
+        flex-direction: column;
+      }
+    }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      &--big {
+        font-size: 228px;
+        line-height: 100%;
+        transition: 1s var(--bezier) all;
+        opacity: 1;
+        &--second {
+          line-height: 85%;
+        }
+        @media only screen and (max-width: 1200px) {
+          font-size: 130px;
+        }
+        @media only screen and (max-width: 375px) {
+          font-size: 108px;
+        }
+      }
+      &--small {
+        transition: 1s var(--bezier) all;
+        opacity: 1;
+        font-size: 91px;
+        &--second {
+          line-height: 160%;
+          font-size: 53px;
+          color: #c7c7c7;
+        }
+        @media only screen and (max-width: 1200px) {
+          font-size: 52px;
+        }
+        @media only screen and (max-width: 375px) {
+          font-size: 44px;
+        }
+      }
+      &--off {
+        transition: 1s var(--bezier) all;
+        opacity: 0;
+      }
+      &__button {
+        font-size: 138px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 28px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 30px;
+        letter-spacing: 0em;
+        z-index: 5;
+        cursor: pointer;
+        transition: 0.5s all var(--bezier);
+        & a {
+          color: white;
+        }
+        &__arrow {
+          width: 120px;
+          height: 120px;
+        }
+        @media only screen and (min-width: 1201px) {
+          &:hover {
+            transition: 0.5s all var(--bezier);
+            letter-spacing: 0.275em;
+          }
+        }
+        @media only screen and (max-width: 1200px) {
+          font-size: 92px;
+          &__arrow {
+            width: 100px;
+            height: 100px;
+          }
+        }
+        @media only screen and (max-width: 375px) {
+          font-size: 86px;
+          &__arrow {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+    &__globe {
+      width: 530px;
+      height: 530px;
+      position: relative;
+      @media only screen and (max-width: 1200px) {
+        width: 420px;
+      }
+      @media only screen and (max-width: 425px) {
+        width: 520px;
+      }
+      @media only screen and (max-width: 375px) {
+        width: 420px;
+      }
+      &__globe {
+        width: 463px;
+        height: 463px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 1s all var(--bezier);
+        opacity: 1;
+        &--first {
+          background: url("../assets/images/globe.png") #b4b4b4;
+          background-size: cover;
+          background-repeat: repeat-x;
+          border-radius: 50%;
+          box-shadow: 0 0 20px #747474;
+          animation: animateEarth 45s linear infinite;
+          @keyframes animateEarth {
+            0% {
+              background-position: 0 0;
+            }
+            100% {
+              background-position: -2156px 0;
+            }
+          }
+        }
+        @media only screen and (max-width: 1200px) {
+          width: 350px;
+          height: 350px;
+        }
+        @media only screen and (max-width: 425px) {
+          width: 450px;
+          height: 450px;
+        }
+        @media only screen and (max-width: 375px) {
+          width: 350px;
+          height: 350px;
+        }
+        &--second {
+          width: calc(463px * 1.11354079058);
+          @media only screen and (max-width: 1200px) {
+            width: calc(350px * 1.11354079058);
+            height: 350px;
+          }
+          @media only screen and (max-width: 425px) {
+            width: calc(300px * 1.11354079058);
+            height: 300px;
+          }
+          @media only screen and (max-width: 375px) {
+            width: calc(270px * 1.11354079058);
+            height: 270px;
+          }
+          aspect-ratio: 1.11354079058;
+          cursor: default;
+        }
+        &--off {
+          transition: 1s all var(--bezier);
+          opacity: 0;
+        }
+      }
+      &__circles {
+        animation: 8s linear infinite rotating;
+        width: 530px;
+        height: 530px;
+        @media only screen and (max-width: 1200px) {
+          width: 420px;
+        }
+        @media only screen and (max-width: 425px) {
+          width: 520px;
+        }
+        @media only screen and (max-width: 375px) {
+          width: 420px;
+        }
+      }
+    }
+    &__garbage {
+      position: absolute;
+      cursor: crosshair;
+      transition: 0.7s all var(--bezier);
+      &:nth-of-type(1) {
+        animation: garbageFloat 10s ease-in-out infinite;
+        left: 35%;
+        bottom: 10%;
+      }
+      &:nth-of-type(2) {
+        animation: garbageFloat 7s ease-in-out infinite;
+        right: 10%;
+        bottom: 10%;
+      }
+      &:nth-of-type(3) {
+        animation: garbageFloat 13s ease-in-out infinite;
+        right: 15%;
+        top: 10%;
+      }
+      &:nth-of-type(4) {
+        animation: garbageFloat 15s ease-in-out infinite;
+        top: -10%;
+        left: 30%;
+      }
+      &--off {
+        cursor: default;
+        pointer-events: none;
+        transition: 0.7s all var(--bezier);
+        opacity: 0;
+        visibility: hidden;
+      }
+      @media only screen and (max-width: 1200px) {
+        scale: 0.8;
+        &:nth-of-type(1) {
+          left: 35%;
+          bottom: 20%;
+        }
+        &:nth-of-type(2) {
+          right: 10%;
+          bottom: 15%;
+        }
+        &:nth-of-type(3) {
+          right: 15%;
+          top: 5%;
+        }
+        &:nth-of-type(4) {
+          top: -15%;
+          left: 30%;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        scale: 0.7;
+        &:nth-of-type(1) {
+          bottom: 20%;
+          left: 35%;
+        }
+        &:nth-of-type(2) {
+          bottom: 15%;
+          left: 50%;
+        }
+        &:nth-of-type(3) {
+          top: 5%;
+          right: -7%;
+        }
+        &:nth-of-type(4) {
+          top: -15%;
+          left: 30%;
+        }
+      }
+      @media only screen and (max-width: 824px) {
+        scale: 0.8;
+        &:nth-of-type(1) {
+          bottom: 50%;
+          left: 55%;
+        }
+        &:nth-of-type(2) {
+          bottom: 50%;
+          left: 10%;
+        }
+        &:nth-of-type(3) {
+          top: 50%;
+          right: 50%;
+        }
+        &:nth-of-type(4) {
+          top: 30%;
+          left: 30%;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        scale: 0.7;
+        &:nth-of-type(1) {
+          bottom: 50%;
+          left: 35%;
+        }
+        &:nth-of-type(2) {
+          bottom: 50%;
+          left: 10%;
+        }
+        &:nth-of-type(3) {
+          top: 50%;
+          right: 50%;
+        }
+        &:nth-of-type(4) {
+          top: 30%;
+          left: 17%;
+        }
+      }
+      @media only screen and (max-width: 642px) {
+        scale: 0.7;
+        &:nth-of-type(1) {
+          bottom: 50%;
+          left: 25%;
+        }
+        &:nth-of-type(2) {
+          bottom: 50%;
+          left: 5%;
+        }
+        &:nth-of-type(3) {
+          top: 50%;
+          right: 50%;
+        }
+        &:nth-of-type(4) {
+          top: 30%;
+          left: 2%;
+        }
+      }
+      @media only screen and (max-width: 504px) {
+        scale: 0.7;
+        &:nth-of-type(1) {
+          bottom: 50%;
+          left: 25%;
+        }
+        &:nth-of-type(2) {
+          bottom: 50%;
+          left: 0%;
+        }
+        &:nth-of-type(3) {
+          top: 50%;
+          right: 50%;
+        }
+        &:nth-of-type(4) {
+          top: 30%;
+          left: -10%;
+        }
+      }
+      @media only screen and (max-width: 375px) {
+        scale: 0.7;
+        &:nth-of-type(1) {
+          bottom: 50%;
+          left: 15%;
+        }
+        &:nth-of-type(2) {
+          bottom: 50%;
+          left: -10%;
+        }
+        &:nth-of-type(3) {
+          top: 50%;
+          right: 50%;
+        }
+        &:nth-of-type(4) {
+          top: 30%;
+          left: -20%;
+        }
+      }
+    }
+  }
+}
+
+//animation: garbageFloat 10s ease-in-out infinite;
+
+@keyframes garbageFloat {
+  0% {
+    transform: rotateZ(2deg) translate(20px, 0px);
+  }
+  50% {
+    transform: rotateZ(-2deg) translate(0px, 100px);
+  }
+  100% {
+    transform: rotateZ(2deg) translate(20px, 0px);
+  }
+}

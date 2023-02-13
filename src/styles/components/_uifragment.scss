@@ -1,0 +1,55 @@
+.uifragment {
+  position: fixed;
+  z-index: 10;
+  bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+  transition: 1s all var(--bezier);
+
+  & > img {
+    filter: var(--dropshadow);
+  }
+
+  &__line {
+    filter: var(--dropshadow);
+    height: 60px;
+    border-radius: 1px;
+    width: 2px;
+    background-color: #000;
+    position: relative;
+
+    &::before {
+      filter: var(--dropshadow);
+      position: absolute;
+      content: "";
+      height: 6px;
+      width: 6px;
+      border-radius: 3px;
+      background-color: #000;
+      display: block;
+      left: -2px;
+      animation: scroll 3s infinite var(--bezier);
+    }
+  }
+
+  &:nth-of-type(1) {
+    left: 29px;
+  }
+  &:nth-of-type(2) {
+    right: 29px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    top: 6px;
+  }
+  50% {
+    top: 48px;
+  }
+  100% {
+    top: 6px;
+  }
+}

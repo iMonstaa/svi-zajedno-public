@@ -1,0 +1,121 @@
+[
+  {
+    "Name": "Laptop",
+    "Ime": "Laptop",
+    "Materials": ["Plastika", "Metal", "Elektronika"],
+    "Process": "Lap-topovi se mogu reciklirati putem programa za reciklažu e-otpada ili specijalizovanih mašina za reciklažu elektronike. Recikler će odvojiti plastične, metalne i elektronske komponente radi pravilnog odlaganja i recikliranja. Plastika i metal se mogu istopiti i koristiti za kreiranje novih proizvoda, dok se elektronika može obraditi da bi se izvukli vredni materijali kao što su zlato, srebro i bakar.",
+    "Category": "Elektronski otpad"
+  },
+  {
+    "Name": "Cell Phone",
+    "Ime": "Telefon",
+    "Materials": ["Plastika", "Metal", "Elektronika"],
+    "Process": "Mobilni telefoni se mogu reciklirati putem programa za reciklažu e-otpada ili specijalizovanih mašina za reciklažu elektronike. Recikler će odvojiti plastične, metalne i elektronske komponente radi pravilnog odlaganja i recikliranja. Plastika i metal se mogu istopiti i koristiti za kreiranje novih proizvoda, dok se elektronika može obraditi da bi se izvukli vredni materijali kao što su zlato, srebro i bakar.",
+    "Category": "Elektronski otpad"
+  },
+  {
+    "Name": "TV",
+    "Ime": "TV",
+    "Materials": ["Plastika", "Metal", "Elektronika"],
+    "Process": "Televizori se mogu reciklirati putem programa za reciklažu e-otpada ili specijalizovanih mašina za reciklažu elektronike. Recikler će odvojiti plastične, metalne i elektronske komponente radi pravilnog odlaganja i recikliranja. Plastika i metal se mogu istopiti i koristiti za kreiranje novih proizvoda, dok se elektronika može obraditi da bi se izvukli vredni materijali kao što su zlato, srebro i bakar.",
+    "Category": "Elektronski otpad"
+  },
+  {
+    "Name": "Keyboard",
+    "Ime": "Tastatura",
+    "Materials": ["Plastika", "Metal", "Elektronika"],
+    "Process": "Tastature se mogu reciklirati putem programa za reciklažu e-otpada ili specijalizovanih mašina za reciklažu elektronike. Recikler će odvojiti plastične, metalne i elektronske komponente radi pravilnog odlaganja i recikliranja. Plastika i metal se mogu istopiti i koristiti za kreiranje novih proizvoda, dok se elektronika može obraditi da bi se izvukli vredni materijali kao što su zlato, srebro i bakar.",
+    "Category": "Elektronski otpad"
+  },
+  {
+    "Name": "Mouse",
+    "Ime": "Miš",
+    "Materials": ["Plastika", "Metal", "Elektronika"],
+    "Process": "Miševi se mogu reciklirati putem programa za reciklažu e-otpada ili specijalizovanih mašina za reciklažu elektronike. Recikler će odvojiti plastične, metalne i elektronske komponente radi pravilnog odlaganja i recikliranja. Plastika i metal se mogu istopiti i koristiti za kreiranje novih proizvoda, dok se elektronika može obraditi da bi se izvukli vredni materijali kao što su zlato, srebro i bakar.",
+    "Category": "Elektronski otpad"
+  },
+  {
+    "Name": "Bottle",
+    "Ime": "Flaša",
+    "Materials": ["Plastika", "Metal", "Staklo"],
+    "Process": "Plastične flaše/boce se mogu reciklirati stavljanjem u kantu za reciklažu ili odnošenjem u objekat za reciklažu. Plastika se topi i oblikuje u nove plastične proizvode. Staklene boce se takođe mogu reciklirati stavljanjem u kantu za reciklažu ili odnošenjem u objekat za reciklažu. Staklo se topi i oblikuje u nove staklene proizvode.",
+    "Category": "Plastičan otpad / Stakleni otpad"
+  },
+  {
+    "Name": "Cup",
+    "Ime": "Čaša/šolja/limenka",
+    "Materials": ["Aluminijum", "Staklo", "Porcelan"],
+    "Process": "Limenke napravljene od aluminijuma mogu se reciklirati stavljanjem u kantu za reciklažu ili odnošenjem u objekat za reciklažu. Aluminijum se topi i oblikuje u nove aluminijumske proizvode. Staklene čaše se mogu reciklirati na isti način kao i staklene boce, stavljanjem u kantu za reciklažu ili odnošenjem u objekat za reciklažu. Porcelanske šolje se takođe mogu reciklirati, ali će možda morati da se odnesu u specijalizovani recikler koji obrađuje porcelan.",
+    "Category": "Metalan otpad / Stakleni otpad / Procelanski otpad"
+  },
+  {
+    "Name": "Car",
+    "Ime": "Automobil",
+    "Materials": ["Metal", "Plastika", "Elektronika"],
+    "Process": "Automobili se mogu reciklirati u deponijama automobila ili specijalizovanim mašinama za reciklažu metala. Metalne, plastične i elektronske komponente se odvajaju i recikliraju. Metal se može pretopiti i oblikovati u nove metalne proizvode, dok se plastika i elektronika mogu obraditi da bi se izvukli vredni materijali.",
+    "Category": "Metalan otpad / Plastičan otpad / Elektronski otpad"
+  },
+  {
+    "Name": "Bus",
+    "Ime": "Autobus",
+    "Materials": ["Metal", "Plastika", "Elektronika"],
+    "Process": "Autobusi se mogu reciklirati u auto-razbijačištima ili specijalizovanim mašinama za reciklažu metala. Metalne, plastične i elektronske komponente se odvajaju i recikliraju. Metal se može pretopiti i oblikovati u nove metalne proizvode, dok se plastika i elektronika mogu obraditi da bi se izvukli vredni materijali.",
+    "Category": "Metalan otpad / Plastičan otpad / Elektronski otpad"
+  },
+  {
+    "Name": "Train",
+    "Ime": "Voz",
+    "Materials": ["Metal", "Plastika", "Elektronika"],
+    "Process": "Vozovi se mogu reciklirati putem auto-razbijališta ili specijalizovanih mašina za reciklažu metala. Metalne, plastične i elektronske komponente se odvajaju i recikliraju. Metal se može pretopiti i oblikovati u nove metalne proizvode, dok se plastika i elektronika mogu obraditi da bi se izvukli vredni materijali.",
+    "Category": "Metalan otpad / Plastičan otpad / Elektronski otpad"
+  },
+  {
+    "Name": "Bed",
+    "Ime": "Krevet",
+    "Materials": ["Metal", "Drvo", "Tkanina"],
+    "Process": "Kreveti se mogu reciklirati preko reciklera nameštaja ili deponija starog metala. Metalne komponente se tope i oblikuju u nove metalne proizvode, dok se drvo može usitnjavati i koristiti kao izvor goriva ili reciklirati u nove proizvode od drveta. Tkanina se može reciklirati u krpe ili reciklirati u nove proizvode.",
+    "Category": "Metalan otpad / Drveni otpad / Otpad od tkanine"
+  },
+  {
+    "Name": "Couch",
+    "Ime": "Kauč",
+    "Materials": ["Metal", "Drvo", "Tkanina"],
+    "Process": "Kaučevi se mogu reciklirati preko reciklera nameštaja ili deponija starog metala. Metalne komponente se tope i oblikuju u nove metalne proizvode, dok se drvo može usitnjavati i koristiti kao izvor goriva ili reciklirati u nove proizvode od drveta. Tkanina se može reciklirati u krpe ili reciklirati u nove proizvode.",
+    "Category": "Metalan otpad / Drveni otpad / Otpad od tkanine"
+  },
+  {
+    "Name": "Chair",
+    "Ime": "Stolica",
+    "Materials": ["Metal", "Drvo", "Tkanina"],
+    "Process": "Stolice se mogu reciklirati preko reciklera nameštaja ili deponija starog metala. Metalne komponente se tope i oblikuju u nove metalne proizvode, dok se drvo može usitnjavati i koristiti kao izvor goriva ili reciklirati u nove proizvode od drveta. Tkanina se može reciklirati u krpe ili reciklirati u nove proizvode.",
+    "Category": "Metalan otpad / Drveni otpad / Otpad od tkanine"
+  },
+  {
+    "Name": "Dining Table",
+    "Ime": "Sto",
+    "Materials": ["Metal", "Drvo", "Staklo"],
+    "Process": "Trpezarijski stolovi se mogu reciklirati preko reciklera nameštaja ili deponija starog metala. Metalne komponente se tope i oblikuju u nove metalne proizvode, dok se drvo može usitnjavati i koristiti kao izvor goriva ili reciklirati u nove proizvode od drveta. Staklo se može reciklirati na isti način kao staklene čaše ili flaše.",
+    "Category": "Metalan otpad / Drveni otpad / Stakleni otpad"
+  },
+  {
+    "Name": "Handbag",
+    "Ime": "Ručna torba / tašna / kesa",
+    "Materials": ["Koža", "Tkanina", "Metal", "Plastika"],
+    "Process": "Tašne se mogu reciklirati preko reciklera tekstila ili kože. Koža se može preraditi u nove kožne proizvode, dok se tkanina može reciklirati u krpe ili reciklirati u nove proizvode. Metalne komponente se mogu pretopiti i oblikovati u nove metalne proizvode.",
+    "Category": "Kožni otpad / Otpad od tkanine / Metalan otpad"
+  },
+  {
+    "Name": "Toothbrush",
+    "Ime": "Četkica za zube",
+    "Materials": ["Plastika", "Četke"],
+    "Process": "Četkice za zube se mogu reciklirati preko plastičnih reciklaža. Plastika se može rastopiti i oblikovati u nove plastične proizvode. Čekinje se mogu ukloniti i pravilno odložiti, jer se ne mogu reciklirati.",
+    "Category": "Plastičan otpad"
+  },
+  {
+    "Name": "Book",
+    "Ime": "Knjiga",
+    "Materials": ["Papir", "Plastika"],
+    "Process": "Knjige se mogu reciklirati preko reciklaža papira. Papir se može razbiti i preraditi u nove proizvode od papira.",
+    "Category": "Papirni otpad / Plastičan otpad"
+  }
+]

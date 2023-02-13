@@ -1,0 +1,39 @@
+.factcard {
+  background-color: #000;
+  height: 120px;
+  min-width: 205px;
+  max-width: 205px;
+  font-size: 20px;
+  padding: 10px;
+  display: inline-block;
+
+  @media only screen and (max-width: 767px) {
+    &:first-of-type {
+      margin-left: 30px;
+    }
+    &:last-of-type {
+      margin-right: 30px;
+    }
+  }
+  &__wrapper {
+    height: 140px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 10px;
+    width: clamp(0px, 100%, 480px);
+    @media only screen and (min-width: 768px) {
+      width: 635px;
+    }
+  }
+  &__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  & > p {
+    color: #fff;
+  }
+  border-radius: 20px;
+  font-family: "Sofia Sans Condensed", sans-serif;
+}

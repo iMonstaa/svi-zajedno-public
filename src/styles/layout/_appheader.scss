@@ -1,0 +1,14 @@
+.app__header {
+  position: fixed;
+  padding: 19px 32px;
+  height: 110px;
+  width: 100%;
+  top: 0;
+  z-index: 6;
+  background: linear-gradient(#ffffff, #00000000);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all var(--bezier);
+}

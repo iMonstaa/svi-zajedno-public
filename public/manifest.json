@@ -1,0 +1,10 @@
+{
+  "name": "SVI.ZAJEDNO()",
+  "short_name": "svi-zajedno",
+  "theme_color": "#000",
+  "background_color": "#fff",
+  "display": "browser",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}
