@@ -18,6 +18,8 @@
 
 ![Početak animacije](https://i.imgur.com/aDvmAL6.png)
 ![Kraj animacije](https://i.imgur.com/LRILQ7l.png)
+![Glavna stranica](https://i.imgur.com/32EnI09.png)
+![Info panel](https://i.imgur.com/T6LvLTH.png)
 
 ---
 
